@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineClick</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            background-color: #0F0505;
+            color: #FFFEE0;
+        }
+
+
+        .navbar {
+            height: 72px;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+
+            padding: 0 55px;
+
+            background-color: #0F0505;
+        }
+
+        .hero {
+            position: relative;
+
+            height: 600px;
+
+            background-image: url("thegodfather.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: flex;
+            align-items: flex-end;
+
+            padding: 60px 55px;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 700;
+
+            margin-right: 60px;
+        }
+
+        .logo-cine {
+            color: #FFFEE0;
+        }
+
+        .logo-click {
+            color: #7D1212;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+
+            color: #FFFEE0;
+
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #7D1212;
+        }
+
+        .nav-right {
+            margin-left: auto;
+
+            display: flex;
+            align-items: center;
+
+            gap: 25px;
+        }
+
+        .login {
+            color: #FFFEE0;
+
+            text-decoration: none;
+
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .btn-comprar-nav {
+            background-color: #7D1212;
+
+            color: #FFFEE0;
+
+            text-decoration: none;
+
+            padding: 13px 20px;
+
+            border-radius: 8px;
+
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .btn-comprar-nav:hover {
+            opacity: 0.85;
+        }
+
+        .hero-content {
+            max-width: 500px;
+        }
+
+        .movie-info {
+            font-size: 14px;
+
+            margin-bottom: 25px;
+
+            opacity: 0.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+
+            gap: 15px;
+        }
+
+        .btn-primary {
+            background-color: #7D1212;
+
+            color: #FFFEE0;
+
+            text-decoration: none;
+
+            padding: 13px 20px;
+
+            border-radius: 8px;
+
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .btn-secondary {
+            border: 1px solid #FFFEE0;
+
+            color: #FFFEE0;
+
+            text-decoration: none;
+
+            padding: 12px 20px;
+
+            border-radius: 8px;
+
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .btn-primary:hover,
+        .btn-secondary:hover {
+            opacity: 0.8;
+        }
+
+        .carousel-dots {
+            position: absolute;
+
+            bottom: 20px;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            display: flex;
+
+            gap: 8px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+
+            border-radius: 50%;
+
+            background-color: rgba(255, 254, 224, 0.4);
+        }
+
+        .dot-active {
+            background-color: #7D1212;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-cine">cine</span><span class="logo-click">Click</span>
+        </div>
+
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#">Películas</a>
+                </li>
+
+                <li>
+                    <a href="#">Cines</a>
+                </li>
+
+                <li>
+                    <a href="#">Promociones</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="nav-right">
+
+            <a href="#" class="login">
+                Iniciar sesión
+            </a>
+
+            <a href="#" class="btn-comprar-nav">
+                Comprar entradas
+            </a>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="movie-info">
+                    Crimen • Drama • 2h 55min
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#" class="btn-primary">
+                        Comprar entradas
+                    </a>
+
+                    <a href="#" class="btn-secondary">
+                        ▶ Ver tráiler
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="carousel-dots">
+
+                <span class="dot dot-active"></span>
+
+                <span class="dot"></span>
+
+                <span class="dot"></span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+</body>
+</html>
