@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <link rel="shortcut icon" href="/imagenes/iconoLOGO.png" type="image/x-icon">
     <style>
 
         * {
@@ -41,7 +42,7 @@
 
             height: 600px;
 
-            background-image: url("thegodfather.jpg");
+            background-image: url("/imagenes/thegodfather.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -213,7 +214,7 @@
     <header class="navbar">
 
         <div class="logo">
-            <span class="logo-cine">cine</span><span class="logo-click">Click</span>
+            <a href="/index.html"><span class="logo-cine">Cine</span><span class="logo-click">Click</span></a>
         </div>
 
 
@@ -221,31 +222,18 @@
 
             <ul class="nav-links">
 
-                <li>
-                    <a href="#">Películas</a>
-                </li>
+                <li><a href="/cartelera.html">Películas</a></li>
 
-                <li>
-                    <a href="#">Cines</a>
-                </li>
-
-                <li>
-                    <a href="#">Promociones</a>
-                </li>
-
+                <li><a href="/cines.html">Cines</a></li>
             </ul>
 
         </nav>
 
         <div class="nav-right">
 
-            <a href="#" class="login">
-                Iniciar sesión
-            </a>
+            <a href="#" class="login">Iniciar sesión</a>
 
-            <a href="#" class="btn-comprar-nav">
-                Comprar entradas
-            </a>
+            <a href="/elegir_pelicula.html" class="btn-comprar-nav">Comprar entradas</a>
 
         </div>
 
@@ -264,31 +252,52 @@
 
                 <div class="hero-buttons">
 
-                    <a href="#" class="btn-primary">
-                        Comprar entradas
-                    </a>
+                    <a href="/elegir_pelicula.html" class="btn-primary">Comprar entradas</a>
 
-                    <a href="#" class="btn-secondary">
-                        ▶ Ver tráiler
-                    </a>
+                    <a href="https://youtu.be/UaVTIH8mujA?si=laRElwO7iewu7_Ct" class="btn-secondary">▶ Ver tráiler</a>
 
                 </div>
 
             </div>
 
-            <div class="carousel-dots">
-
-                <span class="dot dot-active"></span>
-
-                <span class="dot"></span>
-
-                <span class="dot"></span>
-
-            </div>
 
         </section>
 
-    </main>
+        
+    <div id="carrusel_cartelera">
+        <h2 class="seccion">CARTELERA</h2>
+        <p class="guion_deco">--------------------------------------------------------</p>
+
+        <button class="boton_izquierda"><img src="/imagenes/botonIZQ.png" alt="Anterior" width="50px"></button>
+        <article>
+            <section class="pelicula">
+            <img src="imagenes/spiderman.jpg" alt="SPIDERMAN BRAND NEW DAY" width="250px" >
+            <p>SPIDER-MAN:UN NUEVO DIA</p>
+            <p>2D-3D</p>
+            </section>
+
+            <section class="pelicula">
+            <img src="imagenes/guerra.png" alt="LA GUERRA DE LOS ULTIMOS" width="250px">
+            <p>LA GUERRA DE LOS ULTIMOS</p>
+            <p>2D-3D</p>
+            </section>
+
+            <section class="pelicula">
+            <img src="imagenes/impacto.jpg" alt="IMPACTO MORTAL" width="250px" >
+            <p>IMPACTO MORTAL </p>
+            <p>2D-3D</p>
+            </section>
+
+            <section class="pelicula">
+            <img src="imagenes/laodisea.jpg" alt="LA ODISEA" width="250px">
+            <p>LA ODISEA</p>
+            <p>2D-3D</p>
+            </section>
+        </article>
+        <button class="boton_derecha"><img src="/imagenes/botonDERECHA.png" alt="Siguiente" width="50px"></button>
+    </div>
+
+</main>
 
 
 </body>
