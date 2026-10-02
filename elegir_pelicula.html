@@ -4,378 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/imagenes/iconoLOGO.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/imagenes/iconoLOGO.png">
+    <link rel="stylesheet" href="style.css">
 
     <title>CineClick</title>
 
-    <style>
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #0F0505;
-            color: white;
-        }
-
-        /* =========================
-           HEADER
-        ========================== */
-
-        header {
-            display: flex;
-            height: 65px;
-            background-color: #0F0505;
-        }
-
-        .logo {
-            width: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .logo span {
-            color: #7D1212;
-        }
-
-        .barra-titulo {
-            flex: 1;
-            background-color: #7D1212;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            position: relative;
-
-            font-size: 15px;
-        }
-
-        .cerrar {
-            position: absolute;
-            right: 20px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        /* =========================
-           CONTENIDO
-        ========================== */
-
-        main {
-            width: 92%;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .ubicacion {
-            text-align: center;
-            margin-top: 28px;
-
-            font-size: 18px;
-            line-height: 1.3;
-        }
-
-        .ubicacion span {
-            color: red;
-            font-weight: bold;
-        }
-
-        .linea {
-            border-bottom: 3px dotted #FFFEE0;
-            margin: 20px 0 12px;
-        }
-
-        /* =========================
-           FECHAS
-        ========================== */
-
-        .fechas {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-        }
-
-        .fecha {
-            background-color: #211F1F;
-            color: white;
-
-            border: none;
-            border-radius: 5px;
-
-            width: 155px;
-            height: 50px;
-
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .fecha:hover {
-            background-color: #7D1212;
-        }
-
-        /* =========================
-           FILTROS
-        ========================== */
-
-        .filtros {
-            display: flex;
-            justify-content: center;
-            gap: 18px;
-
-            margin: 12px 0;
-        }
-
-        .filtro {
-            background-color: #211F1F;
-            color: white;
-
-            border: none;
-            border-radius: 5px;
-
-            padding: 7px 25px;
-
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .filtro:hover {
-            background-color: #7D1212;
-        }
-
-        /* =========================
-           PELICULAS
-        ========================== */
-
-        .peliculas {
-            display: flex;
-            justify-content: space-between;
-            gap: 25px;
-
-            margin-top: 15px;
-            padding-bottom: 30px;
-        }
-
-        .pelicula {
-            background-color: #211F1F;
-
-            width: 220px;
-
-            border-radius: 6px;
-            padding: 8px;
-
-            text-align: center;
-        }
-
-        .pelicula img {
-            width: 100%;
-            height: 290px;
-
-            object-fit: cover;
-
-            border-radius: 5px;
-        }
-
-        .pelicula h3 {
-            font-size: 15px;
-            margin-top: 7px;
-
-            text-transform: uppercase;
-        }
-
-        /* =========================
-           RESPONSIVE
-        ========================== */
-
-        @media (max-width: 900px) {
-
-            .peliculas {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .fechas {
-                flex-wrap: wrap;
-            }
-
-            .filtros {
-                flex-wrap: wrap;
-            }
-
-        }
-
-    </style>
-
+    
 </head>
 
 
 <body>
 
-    <!-- HEADER -->
-
-    <header>
+ <div class="marco">
+    <header class="navbar">
 
         <a href="/index.html"><img class="logo" src="/imagenes/LOGO.png" alt="logo" width="100px"></a>
 
         <div class="barra-titulo">
 
-            <p>ELEGÍ UNA PELÍCULA</p>
+            <p class="secciones">COMPRÁ TU ENTRADA</p>
 
             <div class="cerrar">
-                <a href="/index.html"><img src="/imagenes/salirCLARO.png" alt="volver" width="10px"></a>
+                <a href="/index.html"><img src="/imagenes/salirCLARO.png" alt="volver" width="70px"></a>
             </div>
 
         </div>
 
     </header>
+</div>
 
-
+<div class="marco">
     <main>
 
-        <!-- TEXTO SUPERIOR -->
+   
+
+    
+
+    <div class="comprar_entrada">
+       
+        <form class="comprar_entrada" action="">
+            <p class="secciones">ESTRENOS</p>
+            <select class="filtro" name="peliculas_disponibles" id="">
+                
+                <option class="secciones" value="" disabled selected hidden>Peliculas</option>
+                <option class="secciones" value="spiderMan">SPIDERMAN BRAND NEW DAY</option>
+                <option class="secciones" value="spiderMan">LA ODISEA</option>
+                <option class="secciones" value="spiderMan">LA GUERRA DE LOS ULTIMOS</option>
+                <option class="secciones" value="spiderMan">IMPACTO MORTAL</option>
+                <option class="secciones" value="spiderMan">ONE PICE</option>
+                <option class="secciones" value="spiderMan">RESIDENT EVIL: NOCHE CERO</option>
+                <option class="secciones" value="spiderMan">END GAME:BONUS</option>
+                <option class="secciones" value="spiderMan">DUNE</option>
+            </select>
+
+                <p class="secciones">REESTRENOS</p>
+                <select class="filtro" name="peliculas_disponibles" id="">
+                
+                <option class="secciones" value=""disabled selected hidden>Peliculas</option>
+                <option class="secciones" value="spiderMan">CAROLINE</option>
+                <option class="secciones" value="spiderMan">CASPER & WENDY</option>
+                
+                <option class="secciones" value="spiderMan">ALICIA EN EL PAIS DE LAS MARAVILLAS</option>
+                <option class="secciones" value="spiderMan">PETERPAN</option>
+                
+            </select>
+            <br>
+            <input class="filtro" type="date" name="fecha_funcion" min="2026-10-02" max="2026-10-18">
+            <br>
+            <select class="filtro name="formatos" >
+            <option class="secciones" value="" disabled selected hidden>Formato</option>
+            <option class="secciones" value="">2D</option>
+            <option class="secciones" value="">3D</option>
+            </select>
+            <br>
+            <select class="filtro" name="idioma">
+                <option class="secciones" value="" disabled selected hidden>Idioma</option>
+                <option class="secciones" value="">Castellano</option>
+                <option class="secciones" value="">Subtitulada</option>
+            </select>
 
         <section class="ubicacion">
-
-            <p>
-                ESTÁS VIENDO PELÍCULAS DE TODO EL PAÍS, MIRA LOS CINES 
-                <br>
-                DISPONIBLES
-                
-                <a href="/cines.html"><span>AQUÍ</span></a>
-            </p>
-
+        <p class="secciones p">ESTÁS VIENDO PELÍCULAS DE TODO EL PAÍS, MIRA LOS CINES <br> DISPONIBLES<a href="/cines.html"><span> ACÁ</span></a></p>
         </section>
-
-
-        <div class="linea"></div>
-
-
-        <!-- FECHAS -->
-
-        <section class="fechas">
-
-            <button class="fecha">
-                HOY
-            </button>
-
-            <button class="fecha">
-                SÁB / 29 AGO
-            </button>
-
-            <button class="fecha">
-                DOM / 30 AGO
-            </button>
-
-            <button class="fecha">
-                LUN / 31 AGO
-            </button>
-
-            <button class="fecha">
-                MAR / 1 SEP
-            </button>
-
-        </section>
-
-
-        <!-- FILTROS -->
-
-        <section class="filtros">
-
-            <button class="filtro">
-                Formatos ▼
-            </button>
-
-            <button class="filtro">
-                Idioma ▼
-            </button>
-
-            <button class="filtro">
-                Otras opciones ▼
-            </button>
-
-        </section>
-
-
-        <!-- PELICULAS -->
-
-        <section class="peliculas">
-
-            <!-- SPIDERMAN -->
-
-            <div class="pelicula">
-
-                <img
-                    src="imagenes/spiderman.jpg"
-                    alt="Spider-Man Un Nuevo Día"
-                >
-
-                <h3>
-                    Spider-Man:<br>
-                    Un Nuevo Día
-                </h3>
-
-            </div>
-
-
-            <!-- LA ODISEA -->
-
-            <div class="pelicula">
-
-                <img
-                    src="imagenes/laodisea.jpg"
-                    alt="La Odisea"
-                >
-
-                <h3>
-                    La Odisea
-                </h3>
-
-            </div>
-
-
-            <!-- MINIONS -->
-
-            <div class="pelicula">
-
-                <img
-                    src="imagenes/minions.jpg"
-                    alt="Minions y Monstruos"
-                >
-
-                <h3>
-                    Minions &<br>
-                    Monstruos
-                </h3>
-
-            </div>
-
-
-            <!-- TOY STORY -->
-
-            <div class="pelicula">
-
-                <img
-                    src="imagenes/toystory5.jpg"
-                    alt="Toy Story 5"
-                >
-
-                <h3>
-                    Toy Story 5
-                </h3>
-
-            </div>
-
-        </section>
+        <select class="filtro" name="cine">
+            <option value=""></option>
+        </select>
+</form>
 
     </main>
+</div>
 
 </body>
 

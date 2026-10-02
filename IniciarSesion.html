@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar | CineClick</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="marco_nav">
+        <header class="navbar">
+
+            <a href="/index.html">
+                <img class="logo" src="/imagenes/LOGO.png" alt="logo">
+            </a>
+
+            <div class="barra-titulo">
+                <p class="secciones">INGRESAR</p>
+
+                <div class="cerrar">
+                    <a href="/index.html">
+                        <img src="/imagenes/salirCLARO.png" alt="volver" width="70px">
+                    </a>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+    <main class="ingresar">
+
+        <div class="marco">
+            <div class="inicio_sesion">
+
+                <p class="secciones">INICIAR SESIÓN</p>
+
+                <p>Ingresá a tu cuenta y seguí disfrutando del mejor cine.</p>
+
+                <form class="login_formulario">
+
+                    <div class="login_campo">
+                        <label for="email">Correo electrónico</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            placeholder="nombre@correo.com" 
+                            required
+                        >
+                    </div>
+
+                    <div class="login_campo">
+                        <label for="password">Contraseña</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            placeholder="Ingresá tu contraseña" 
+                            required
+                        >
+                    </div>
+
+                    <div class="login_opciones">
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    <button type="submit" class="boton_secundario">
+                        INICIAR SESIÓN
+                    </button>
+
+                </form>
+
+                <p>¿No tenés una cuenta?</p>
+
+                <a href="/registrarse.html" class="boton_secundario">
+                    REGISTRATE
+                </a>
+
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

@@ -1,304 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>CineClick</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/imagenes/iconoLOGO.png">
+    <title>CineClick</title>
 
-    <link rel="shortcut icon" href="/imagenes/iconoLOGO.png" type="image/x-icon">
-    <style>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Montserrat", sans-serif;
-            background-color: #0F0505;
-            color: #FFFEE0;
-        }
-
-
-        .navbar {
-            height: 72px;
-            width: 100%;
-
-            display: flex;
-            align-items: center;
-
-            padding: 0 55px;
-
-            background-color: #0F0505;
-        }
-
-        .hero {
-            position: relative;
-
-            height: 600px;
-
-            background-image: url("/imagenes/thegodfather.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
-            display: flex;
-            align-items: flex-end;
-
-            padding: 60px 55px;
-        }
-
-        .logo {
-            font-size: 26px;
-            font-weight: 700;
-
-            margin-right: 60px;
-        }
-
-        .logo-cine {
-            color: #FFFEE0;
-        }
-
-        .logo-click {
-            color: #7D1212;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-
-            color: #FFFEE0;
-
-            font-size: 15px;
-            font-weight: 500;
-        }
-
-        .nav-links a:hover {
-            color: #7D1212;
-        }
-
-        .nav-right {
-            margin-left: auto;
-
-            display: flex;
-            align-items: center;
-
-            gap: 25px;
-        }
-
-        .login {
-            color: #FFFEE0;
-
-            text-decoration: none;
-
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .btn-comprar-nav {
-            background-color: #7D1212;
-
-            color: #FFFEE0;
-
-            text-decoration: none;
-
-            padding: 13px 20px;
-
-            border-radius: 8px;
-
-            font-size: 13px;
-            font-weight: 600;
-        }
-
-        .btn-comprar-nav:hover {
-            opacity: 0.85;
-        }
-
-        .hero-content {
-            max-width: 500px;
-        }
-
-        .movie-info {
-            font-size: 14px;
-
-            margin-bottom: 25px;
-
-            opacity: 0.8;
-        }
-
-        .hero-buttons {
-            display: flex;
-
-            gap: 15px;
-        }
-
-        .btn-primary {
-            background-color: #7D1212;
-
-            color: #FFFEE0;
-
-            text-decoration: none;
-
-            padding: 13px 20px;
-
-            border-radius: 8px;
-
-            font-size: 13px;
-            font-weight: 600;
-        }
-
-        .btn-secondary {
-            border: 1px solid #FFFEE0;
-
-            color: #FFFEE0;
-
-            text-decoration: none;
-
-            padding: 12px 20px;
-
-            border-radius: 8px;
-
-            font-size: 13px;
-            font-weight: 500;
-        }
-
-        .btn-primary:hover,
-        .btn-secondary:hover {
-            opacity: 0.8;
-        }
-
-        .carousel-dots {
-            position: absolute;
-
-            bottom: 20px;
-            left: 50%;
-
-            transform: translateX(-50%);
-
-            display: flex;
-
-            gap: 8px;
-        }
-
-        .dot {
-            width: 8px;
-            height: 8px;
-
-            border-radius: 50%;
-
-            background-color: rgba(255, 254, 224, 0.4);
-        }
-
-        .dot-active {
-            background-color: #7D1212;
-        }
-
-    </style>
 
 </head>
 
 
 <body>
 
+
+
+
+
+
+
+
+
+
+    
+ <div class="marco_nav">
     <header class="navbar">
+      
 
         <div class="logo">
-            <a href="/index.html"><span class="logo-cine">Cine</span><span class="logo-click">Click</span></a>
+            <a href="/index.html"><img class="logo" src="/imagenes/LOGO.png" alt="logo"></a>
         </div>
 
-
         <nav>
-
             <ul class="nav-links">
-
-                <li><a href="/cartelera.html">Películas</a></li>
-
-                <li><a href="/cines.html">Cines</a></li>
+                <li><a class="link2" href="/peliculas.html">Películas</a></li>
+                <li><a class="link2" href="/cines.html">Cines</a></li>
             </ul>
-
         </nav>
 
-        <div class="nav-right">
+        <div class="nav-derecha">
+            <a href="/IniciarSesion.html" class="boton_secundario">Iniciar sesión</a>
 
-            <a href="#" class="login">Iniciar sesión</a>
-
-            <a href="/elegir_pelicula.html" class="btn-comprar-nav">Comprar entradas</a>
+            <a href="/elegir_pelicula.html" class="boton_comprar_entrada">Comprar entradas</a>
 
         </div>
 
     </header>
+    </div>
+    </div>
 
     <main>
+        <div class="marco">
 
-        <section class="hero">
+        <section class="pelicula_apertura">
+          
 
-            <div class="hero-content">
+            <div class="pelicula_apertura_contenido">
 
-                <p class="movie-info">
-                    Crimen • Drama • 2h 55min
-                </p>
+                <div class="marco_info"><p class="info_pelicula">Crimen • Drama • 2h 55min</p></div>
 
+                    <a href="/elegir_pelicula.html" class="boton_comprar_entrada2">Comprar entradas</a>
 
-                <div class="hero-buttons">
-
-                    <a href="/elegir_pelicula.html" class="btn-primary">Comprar entradas</a>
-
-                    <a href="https://youtu.be/UaVTIH8mujA?si=laRElwO7iewu7_Ct" class="btn-secondary">▶ Ver tráiler</a>
-
-                </div>
+                    <a href="https://youtu.be/UaVTIH8mujA?si=laRElwO7iewu7_Ct" class="boton_secundario2">▶ Ver tráiler</a>
 
             </div>
+            
 
 
         </section>
+        </div>
 
-        
-    <div id="carrusel_cartelera">
-        <h2 class="seccion">CARTELERA</h2>
-        <p class="guion_deco">--------------------------------------------------------</p>
+       
 
-        <button class="boton_izquierda"><img src="/imagenes/botonIZQ.png" alt="Anterior" width="50px"></button>
-        <article>
-            <section class="pelicula">
-            <img src="imagenes/spiderman.jpg" alt="SPIDERMAN BRAND NEW DAY" width="250px" >
-            <p>SPIDER-MAN:UN NUEVO DIA</p>
-            <p>2D-3D</p>
-            </section>
+        <div class="cartelera">
+            <p class="secciones">CARTELERA</p>
+            
 
-            <section class="pelicula">
-            <img src="imagenes/guerra.png" alt="LA GUERRA DE LOS ULTIMOS" width="250px">
-            <p>LA GUERRA DE LOS ULTIMOS</p>
-            <p>2D-3D</p>
-            </section>
+            <article>
+                <section class="pelicula">
+                    <div class="marco_p">
+                    <img class="pelicula_cartelera" src="imagenes/spiderman.jpg" alt="SPIDERMAN BRAND NEW DAY">
+                    <p>SPIDER-MAN:UN NUEVO DIA</p>
+                    <p class="dimensiones">2D-3D</p>
+                    </div>
+                </section>
 
-            <section class="pelicula">
-            <img src="imagenes/impacto.jpg" alt="IMPACTO MORTAL" width="250px" >
-            <p>IMPACTO MORTAL </p>
-            <p>2D-3D</p>
-            </section>
+                <section class="pelicula">
+                    <div class="marco_p">
+                    <img class="pelicula_cartelera" src="imagenes/guerra.png" alt="LA GUERRA DE LOS ULTIMOS">
+                    <p>LA GUERRA DE LOS ULTIMOS</p>
+                    <p class="dimensiones">2D-3D</p>
+                    </div>
+                </section>
 
-            <section class="pelicula">
-            <img src="imagenes/laodisea.jpg" alt="LA ODISEA" width="250px">
-            <p>LA ODISEA</p>
-            <p>2D-3D</p>
-            </section>
-        </article>
-        <button class="boton_derecha"><img src="/imagenes/botonDERECHA.png" alt="Siguiente" width="50px"></button>
+                <section class="pelicula">
+                    <div class="marco_p">
+                    <img class="pelicula_cartelera" src="imagenes/impacto.jpg" alt="IMPACTO MORTAL">
+                    <p>IMPACTO MORTAL </p>
+                    <p class="dimensiones">2D-3D</p>
+                    </div>
+                </section>
+
+                <section class="pelicula">
+                    <div class="marco_p">
+                    <img class="pelicula_cartelera" src="imagenes/laodisea.jpg" alt="LA ODISEA">
+                    <p>LA ODISEA</p>
+                    <p class="dimensiones">2D-3D</p>
+                    </div>
+                </section>
+            </article>
+        </div>
     </div>
-
 </main>
 
 
 </body>
+
 </html>

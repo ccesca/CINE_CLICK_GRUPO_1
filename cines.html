@@ -3,162 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/imagenes/iconoLOGO.png">
+    <link rel="stylesheet" href="style.css">
     <title>CINES</title>
 </head>
-<style>
-    .fondo{
-        background-color: black;
-    }
- 
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #0F0505;
-            color: white;
-        }
-
-        /* =========================
-           HEADER
-        ========================== */
-
-        header {
-            display: flex;
-            height: 65px;
-            background-color: #0F0505;
-        }
-
-        .logo {
-            width: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .logo span {
-            color: #7D1212;
-        }
-
-        .barra-titulo {
-            flex: 1;
-            background-color: #7D1212;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            position: relative;
-
-            font-size: 15px;
-        }
-
-        .cerrar {
-            position: absolute;
-            right: 20px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        /* =========================
-           CONTENIDO
-        ========================== */
-
-        main {
-            width: 92%;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .ubicacion {
-            text-align: center;
-            margin-top: 28px;
-
-            font-size: 18px;
-            line-height: 1.3;
-        }
-
-        .ubicacion span {
-            color: red;
-            font-weight: bold;
-        }
-
-        .linea {
-            border-bottom: 3px dotted #FFFEE0;
-            margin: 20px 0 12px;
-        }
-</style>
-<body class="fondo">
-
-        <header>
+<body>
+ <div class="marco">
+    <header class="navbar">
 
         <a href="/index.html"><img class="logo" src="/imagenes/LOGO.png" alt="logo" width="100px"></a>
 
         <div class="barra-titulo">
 
-            <p>NUESTROS CINES - UBICACIONES</p>
+            <p class="secciones">NUESTROS CINES</p>
 
             <div class="cerrar">
-                <a href="/index.html"><img src="/imagenes/salirCLARO.png" alt="volver" width="10px"></a>
+                <a href="/index.html"><img src="/imagenes/salirCLARO.png" alt="volver" width="70px"></a>
             </div>
 
         </div>
 
     </header>
-    
-
+</div>
 
 
     </nav>
 
+    <div class="marco">
     <div class="CINES">
-        <article class="cartelera">
-            <section>
-                <p>ABASTO SHOPPING</p>
-                <p>BUENOS AIRES</p>
-                <a href="https://maps.app.goo.gl/mw4HeJTY1f4qfiFdA"><img src="/imagenes/ubicacion.png" alt="link ubicacion" width="50px"></a>
+        <article class="article_cines">
+            <section class="filtro">
+                <p class="secciones">ABASTO SHOPPING</p>
+                <p class="secciones">BUENOS AIRES</p>
+                <a href="https://maps.app.goo.gl/mw4HeJTY1f4qfiFdA"><img class="link_ubicacion" src="/imagenes/ubicacion.png" alt="link ubicacion" width="50px"></a>
             </section>
 
-            <section>
-                <p>ALTO AVELLANEDA</p>
-                <p>BUENOS AIRES</p>
-                <a href="https://maps.app.goo.gl/P9LejKzAfwpp45Vq7"><img src="/imagenes/ubicacion.png" alt="link ubicacion" width="50px"></a>
+            <section class="filtro">
+                <p class="secciones">ALTO AVELLANEDA</p>
+                <p class="secciones">BUENOS AIRES</p>
+                <a href="https://maps.app.goo.gl/P9LejKzAfwpp45Vq7"><img class="link_ubicacion" src="/imagenes/ubicacion.png" alt="link ubicacion" width="50px"></a>
             </section>
 
-            <section>
-                <p>NUEVO CENTRO SHOPPING</p>
-                <p>CÓRDOBA</p>
-                <a href="https://maps.app.goo.gl/ESUvvyQmVSMhn6ic6"><img src="/imagenes/ubicacion.png" alt="link ubicacion" width="50px"></a>
+            <section class="filtro">
+                <p class="secciones">NUEVO CENTRO SHOPPING</p>
+                <p class="secciones">CÓRDOBA</p>
+                <a href="https://maps.app.goo.gl/ESUvvyQmVSMhn6ic6"><img class="link_ubicacion" src="/imagenes/ubicacion.png" alt="link ubicacion" width="50px"></a>
             </section>
 
-            <section>
-                <p>PATIO OLMOS</p>
-                <p>CORDOBA</p>
-                <a href="https://maps.app.goo.gl/a4TntBVZpCk4Af8P6"><img src="/imagenes/ubicacion.png" alt="link ubicacion" width="50px"></a>
+            <section class="filtro">
+                <p class="secciones">PATIO OLMOS</p>
+                <p class="secciones">CORDOBA</p>
+                <a href="https://maps.app.goo.gl/a4TntBVZpCk4Af8P6"><img class="link_ubicacion" src="/imagenes/ubicacion.png" alt="link ubicacion" width="50px"></a>
             </section>
 
-            <section>
-                <p>PASEO ALDREY</p>
-                <p>MAR DEL PLATA</p>
-                <a href="https://maps.app.goo.gl/Ay8UWueNAG1HAPC58"><img src="/imagenes/ubicacion.png" alt="link ubicacion" width="50px"></a>
+            <section class="filtro">
+                <p class="secciones">PASEO ALDREY</p>
+                <p class="secciones">MAR DEL PLATA</p>
+                <a href="https://maps.app.goo.gl/Ay8UWueNAG1HAPC58"><img class="link_ubicacion" src="/imagenes/ubicacion.png" alt="link ubicacion" width="50px"></a>
             </section>
 
-            <section>
-                <p>PALERMO</p>
-                <p>BUENOS AIRES</p>
-                <a href="https://maps.app.goo.gl/rfDZPb3RW5WTA8yBA"><img src="/imagenes/ubicacion.png" alt="link ubicacion" width="50px"></a>
+            <section class="filtro">
+                <p class="secciones">PALERMO</p>
+                <p class="secciones">BUENOS AIRES</p>
+                <a href="https://maps.app.goo.gl/rfDZPb3RW5WTA8yBA"><img class="link_ubicacion" src="/imagenes/ubicacion.png" alt="link ubicacion" width="50px"></a>
             </section>
             
 
         </article>
 
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
+
+
+body{
+   
+    background-color: #01002b;
+    color: #FFFEE0;
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+main{
+    margin-top: 20px;
+
+}
+
+a, .dimensiones, .info_pelicula,.secciones, .ver_mas, .boton_secundario{
+
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal; 
+   
+}
+
+p{
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+  
+}
+
+
+
+.navbar{
+    background-color: #01002b;
+    padding: 0;
+    font-size: 18px;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+
+}
+
+.marco, .marco_info, .marco_p, .marco_nav{
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #2eff4a;
+    border-radius: 25px;
+     box-shadow:
+        0 0 5px #FFFEE0,
+        0 0 10px #FFFEE0,
+        0 0 20px #Ff2e9a;
+    & .marco_info{
+    background-color: #01002b;
+    padding: 1px;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    }
+    & .marco_nav{
+        max-height: 80vh;
+        overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+
+}} 
+    
+
+
+
+
+a{
+    text-decoration: none;
+    color: #FFFEE0;
+    
+}
+
+.link2:hover{
+    color: #cfff04;
+}
+
+
+.nav-links{
+   
+    padding: 10px;
+    gap: 30px;
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-derecha{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+    
+}
+.boton_comprar_entrada, .boton_secundario, .ver_mas{
+    border-radius: 10px;
+    background-color: #cfff04;
+    padding: 13px 10px;
+    color: #211F1F;
+}
+.boton_comprar_entrada:hover, .boton_secundario:hover, .ver_mas:hover {
+    background-color: #Ff2e9a;
+}
+.pelicula_apertura{
+    
+    background-image: url(/imagenes/thegodfather.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    height: 500px;
+    object-fit: cover;
+    & .boton_comprar_entrada2, .boton_secundario2{
+    border-radius: 10px;
+    background-color: #Ff2e9a;
+    padding: 13px 10px;
+    
+    }
+}
+.boton_comprar_entrada2:hover, .boton_secundario2:hover{
+    background-color: #cfff04;
+}
+
+article{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+.pelicula{ 
+   .pelicula_cartelera{ /*clase:imaegen perteneciente a la cartelera del index*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 510px;
+    object-fit: cover;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 10px;
+    align-content: center;}
+    p{ /*titulo de peliculas en sus respectivos recuadros*/
+        color: #FFFEE0;}
+
+}
+ .pelicula_ver_mas{
+        display: none;
+    }
+
+
+
+/*elegir pelicula*/
+
+
+
+
+
+        header {
+            display: flex;
+            height: 65px;
+            background-color: #051F48;
+            & p{
+                font-size: 20px;
+            color: #FFFEE0;
+
+            }
+        }
+
+        .logo {
+            width: 350px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+      
+
+      
+        .cerrar {
+            position: absolute;
+            right: 30px;
+            cursor: pointer;
+            
+        }
+
+
+        .ubicacion {
+            text-align: center;
+            margin-top: 28px;
+
+            font-size: 18px;
+            line-height: 1.3;
+        }
+
+        .ubicacion span {
+            color: #Ff2e9a;
+            font-weight: bold;
+        }
+        .ubicacion span:hover{
+            color: #2eff4a;
+        }
+
+        /* =========================
+           FECHAS
+        ========================== */
+
+        .fechas {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .fecha {
+            background-color: #211F1F;
+            color: white;
+
+            border: none;
+            border-radius: 5px;
+
+            width: 155px;
+            height: 50px;
+
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .fecha:hover {
+            background-color: #Ff2e9a;
+        }
+
+
+
+        .filtros {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+
+            margin: 12px 0;
+        }
+
+        .filtro {
+            background-color: #211F1F;
+            color: white;
+
+            border: none;
+            border-radius: 5px;
+
+            padding: 7px 25px;
+
+          
+            cursor: pointer;
+        }
+
+        .filtro:hover {
+            background-color: #Ff2e9a;
+        }
+
+
+ 
+
+        .pelicula h3 {
+            font-size: 15px;
+            margin-top: 7px;
+
+            text-transform: uppercase;
+        }
+
+            .peliculas {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0;
+                
+                
+            }
+
+            .fechas {
+                flex-wrap: wrap;
+            }
+
+            .filtros {
+                flex-wrap: wrap;
+            }
+
+        
+
+
+/*cines*/
+.article_cines  {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+    p{
+        font-size: 20px;
+    }
+    
+    
+}
+.cine{
+
+    padding: 45px;
+    gap: 30px;
+    border-radius: 10px;
+    background-color: #f1030380; 
+ 
+}
+.link_ubicacion{
+    margin-left: top;
+    width: 100px;
+    right: 10px;
+
+}
+
+.ingresar{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .inicio_sesion{
+    padding
+        .form{
+        background-color:#cfff04;
+        border-radius: 25px
+    }}
+    .registro{
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
