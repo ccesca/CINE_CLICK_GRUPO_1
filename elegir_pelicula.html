@@ -6,93 +6,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/imagenes/iconoLOGO.png">
     <link rel="stylesheet" href="style.css">
+    <script src="/js/elegir_pelicula.js"></script>
 
     <title>CineClick</title>
 
-    
+
 </head>
 
 
 <body>
 
- <div class="marco">
-    <header class="navbar">
+    <div class="marco">
+        <header class="navbar">
 
-        <a href="/index.html"><img class="logo" src="/imagenes/LOGO.png" alt="logo" width="100px"></a>
+            <a href="/index.html"><img class="logo" src="/imagenes/LOGO.png" alt="logo" width="100px"></a>
 
-        <div class="barra-titulo">
+            <div class="barra-titulo">
 
-            <p class="secciones">COMPRÁ TU ENTRADA</p>
+                <p class="secciones">COMPRÁ TU ENTRADA</p>
 
-            <div class="cerrar">
-                <a href="/index.html"><img src="/imagenes/salirCLARO.png" alt="volver" width="70px"></a>
+                <div class="cerrar_sesion" id="cerrar_sesion">
+                    <button type="button" class="boton_secundario btn_salir" onclick="cerrarSesion()">CERRAR SESIÓN</button>
+                </div>
+
+                <div class="cerrar">
+                    <a href="/index.html"><img src="/imagenes/salirCLARO.png" alt="volver" width="70px"></a>
+                </div>
+
             </div>
 
+        </header>
+    </div>
+
+
+    <main class="cm">
+
+        <div class="comprar_entrada">
+
+            <form class="form_comprar_entrada" id="form_comprar_entrada" action="">
+
+                <div class="contenedor-fila-marcos">
+
+                    <div class="marco form">
+                        <p class="secciones">Estrenos</p>
+                        <select class="filtro" name="peliculas_disponibles" id="">
+                            <option class="secciones" value="" disabled selected hidden>Peliculas</option>
+                            <option class="secciones" value="spiderMan">SPIDERMAN BRAND NEW DAY</option>
+                            <option class="secciones" value="odisea">LA ODISEA</option>
+                            <option class="secciones" value="guerra_de_los_ultimos">LA GUERRA DE LOS ULTIMOS</option>
+                            <option class="secciones" value="impactoMortal">IMPACTO MORTAL</option>
+                            <option class="secciones" value="OnePice">ONE PICE</option>
+                            <option class="secciones" value="ResidentEvil">RESIDENT EVIL: NOCHE CERO</option>
+                            <option class="secciones" value="endGame">END GAME:BONUS</option>
+                            <option class="secciones" value="dune">DUNE</option>
+                        </select>
+
+                        <p class="secciones">Reestrenos</p>
+                        <select class="filtro" name="peliculas_disponibles" id="">
+                            <option class="secciones" value="" disabled selected hidden>Peliculas</option>
+                            <option class="secciones" value="caroline">CAROLINE</option>
+                            <option class="secciones" value="casper">CASPER & WENDY</option>
+                            <option class="secciones" value="harryPotter">HARRY POTTER</option>
+                            <option class="secciones" value="alicia">ALICIA EN EL PAIS DE LAS MARAVILLAS</option>
+                            <option class="secciones" value="PeterPan">Peter Pan</option>
+                            <option class="secciones" value="Matilda">Matilda</option>
+                            <option class="secciones" value="thegodfather">The Godfather</option>
+                        </select>
+
+
+                    </div>
+
+
+                    <div class="marco ubicacion">
+                        <p class="secciones">Fecha</p>
+                        <div class="fecha_funcion">
+                            <label class="radio-circular">
+                                <input type="radio" id="dia_hoy" name="fecha_cine" value="hoy" checked>
+                                <span class="circulo-neon"></span>
+                                <span class="info_pelicula">09-10-2026</span>
+                            </label>
+
+                            <label class="radio-circular">
+                                <input type="radio" id="dia_manana" name="fecha_cine" value="manana">
+                                <span class="circulo-neon"></span>
+                                <span class="info_pelicula">10-10-2026</span>
+                            </label>
+
+                            <label class="radio-circular">
+                                <input type="radio" id="dia_pasado" name="fecha_cine" value="pasado">
+                                <span class="circulo-neon"></span>
+                                <span class="info_pelicula">11-10-2026</span>
+                            </label>
+
+                            <label class="radio-circular">
+                                <input type="radio" id="dia_pasadom" name="fecha_cine" value="pasadom">
+                                <span class="circulo-neon"></span>
+                                <span class="info_pelicula">12-10-2026</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="marco form">
+                        <p class="secciones">Horario</p>
+                        <select class="filtro" name="formatos">
+                            <option class="secciones" value="" disabled selected hidden>Horario</option>
+                            <option class="secciones" value="">12:00</option>
+                            <option class="secciones" value="">14:00</option>
+                            <option class="secciones" value="">16:00</option>
+                            <option class="secciones" value="">18:00</option>
+                            <option class="secciones" value="">20:00</option>
+                            <option class="secciones" value="">22:00</option>
+                        </select>
+                        <p class="secciones">Formato</p>
+                        <select class="filtro" name="formatos">
+                            <option class="secciones" value="" disabled selected hidden>Formato</option>
+                            <option class="secciones" value="">2D</option>
+                            <option class="secciones" value="">3D</option>
+                        </select>
+                    </div>
+
+                    <div class="marco form">
+                        <p class="secciones">Idioma</p>
+                        <select class="filtro" name="idioma">
+                            <option class="secciones" value="" disabled selected hidden>Idioma</option>
+                            <option class="secciones" value="">Castellano</option>
+                            <option class="secciones" value="">Subtitulada</option>
+                        </select>
+
+                        <p class="secciones">Cantidad de entradas</p>
+                        <select class="filtro" name="idioma">
+                            <option class="secciones" value="" disabled selected hidden>Cantidad</option>
+                            <option class="secciones" value="">1</option>
+                            <option class="secciones" value="">2</option>
+                            <option class="secciones" value="">3</option>
+                            <option class="secciones" value="">4</option>
+
+                        </select>
+                    </div>
+
+                    <div class="marco form">
+                        <p class="secciones">Cine</p>
+                        <select class="filtro" name="cine">
+                            <option class="secciones" value="" disabled selected hidden>Cines</option>
+                            <option class="secciones" value="ABASTO">Abasto Shopping</option>
+                            <option class="secciones" value="AltoAvellaneda">Alto Avellaneda</option>
+                            <option class="secciones" value="nuevoCENTRO">Nuevo centro Shopping</option>
+                            <option class="secciones" value="patioOlmos">Patio Olmos</option>
+                            <option class="secciones" value="aldrey">Paseo Aldrey</option>
+                            <option class="secciones" value="palermo">Palermo</option>
+                        </select>
+
+                        <p class="ubicacion"><a href="/cines.html">¿No sabes que cine elegir?</a></p>
+
+                    </div>
+
+                </div>
+
+                <div class="bloque-boton-centrado">
+                    <button class="boton_secundario">Finalizar</button>
+                </div>
+
+                <div class="alerta-exito" id="mensaje_error_compra">
+                    <div class="marco">
+                        <p class="secciones">Debe iniciar sesión para finalizar la compra.</p>
+                    </div>
+
+                </div>
+
+            </form>
+
         </div>
-
-    </header>
-</div>
-
-<div class="marco">
-    <main>
-
-   
-
-    
-
-    <div class="comprar_entrada">
-       
-        <form class="comprar_entrada" action="">
-            <p class="secciones">ESTRENOS</p>
-            <select class="filtro" name="peliculas_disponibles" id="">
-                
-                <option class="secciones" value="" disabled selected hidden>Peliculas</option>
-                <option class="secciones" value="spiderMan">SPIDERMAN BRAND NEW DAY</option>
-                <option class="secciones" value="spiderMan">LA ODISEA</option>
-                <option class="secciones" value="spiderMan">LA GUERRA DE LOS ULTIMOS</option>
-                <option class="secciones" value="spiderMan">IMPACTO MORTAL</option>
-                <option class="secciones" value="spiderMan">ONE PICE</option>
-                <option class="secciones" value="spiderMan">RESIDENT EVIL: NOCHE CERO</option>
-                <option class="secciones" value="spiderMan">END GAME:BONUS</option>
-                <option class="secciones" value="spiderMan">DUNE</option>
-            </select>
-
-                <p class="secciones">REESTRENOS</p>
-                <select class="filtro" name="peliculas_disponibles" id="">
-                
-                <option class="secciones" value=""disabled selected hidden>Peliculas</option>
-                <option class="secciones" value="spiderMan">CAROLINE</option>
-                <option class="secciones" value="spiderMan">CASPER & WENDY</option>
-                
-                <option class="secciones" value="spiderMan">ALICIA EN EL PAIS DE LAS MARAVILLAS</option>
-                <option class="secciones" value="spiderMan">PETERPAN</option>
-                
-            </select>
-            <br>
-            <input class="filtro" type="date" name="fecha_funcion" min="2026-10-02" max="2026-10-18">
-            <br>
-            <select class="filtro name="formatos" >
-            <option class="secciones" value="" disabled selected hidden>Formato</option>
-            <option class="secciones" value="">2D</option>
-            <option class="secciones" value="">3D</option>
-            </select>
-            <br>
-            <select class="filtro" name="idioma">
-                <option class="secciones" value="" disabled selected hidden>Idioma</option>
-                <option class="secciones" value="">Castellano</option>
-                <option class="secciones" value="">Subtitulada</option>
-            </select>
-
-        <section class="ubicacion">
-        <p class="secciones p">ESTÁS VIENDO PELÍCULAS DE TODO EL PAÍS, MIRA LOS CINES <br> DISPONIBLES<a href="/cines.html"><span> ACÁ</span></a></p>
-        </section>
-        <select class="filtro" name="cine">
-            <option value=""></option>
-        </select>
-</form>
-
+        </div>
     </main>
-</div>
 
 </body>
 
